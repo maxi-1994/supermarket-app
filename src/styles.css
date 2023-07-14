@@ -1,0 +1,140 @@
+:root {
+    --main-blue-color: #3D79B1;
+    --main-gray-color: #EBF1F5;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Mobile First */
+
+/* -----------> Agregar codigo responsive aca <----------- */
+/* Primero se genera todo el css para mobile y luego la version de escritorio de codifica dentro del media query */
+
+.active {
+    color: #FFF !important;
+    background-color: var(--main-blue-color);
+}
+
+#navbar-component {
+    background-color: var(--main-gray-color) !important;
+}
+
+#navbar-component .navbar-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar-component .navbar-menu li {
+    width: 50%;
+    text-align: center;
+}
+
+#navbar-component .navbar-menu a {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: all .4s;
+}
+
+#addItemForm {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#addItemForm .form-control {
+    height: 50px;
+    background-color: var(--main-gray-color);
+    color: #000;
+    border: 1px solid var(--main-gray-color);
+    border-radius: 30px;
+}
+#addItemForm .form-control:focus{
+    box-shadow: none;
+}
+#addItemForm .form-control::placeholder {
+    color: #000;
+}
+
+#addItemForm .btn-primary {
+    position: absolute;
+    top: 5px;
+    left: 340px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-blue-color);
+    border-radius: 100%;
+    padding: 0;
+}
+#addItemForm .btn-primary:focus {
+    box-shadow: none;
+}
+
+#item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--main-gray-color);
+    border-radius: 10px;
+    box-shadow: -3px 5px 12px -9px rgba(0,0,0,0.65);
+    -webkit-box-shadow: -3px 5px 12px -9px rgba(0,0,0,0.65);
+    -moz-box-shadow: -3px 5px 12px -9px rgba(0,0,0,0.65);
+    margin-top: 12px;
+    padding: 10px 5px;
+}
+
+.item-done {
+    background-color: #2AB06F;
+    border-color: #2AB06F !important;
+    color: #FFF;
+}
+
+#item p {
+    margin: 0 0 0 10px;
+    text-transform: capitalize;
+}
+
+#item .price-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#item .price-wrapper .counter-content .increment-btn {
+    background-color: var(--main-blue-color);
+    border-radius: 20px 0 0 20px;
+    border: none;
+    padding: 3px 12px;
+}
+
+#item .price-wrapper .counter-content .decrement-btn {
+    background-color: var(--main-blue-color);
+    border-radius: 0 20px 20px 0;
+    border: none;
+    border-left: 1px solid var(--main-gray-color);
+    padding: 3px 12px;
+}
+
+#item .price-wrapper .form-control {
+    width: 50%;
+    margin-right: 20px;
+    padding: 0 10px;
+}
+#item .price-wrapper .form-control:focus {
+    box-shadow: none;
+    border: 1px solid var(--main-blue-color);
+}
+
+@media (min-width: 950px) {
+
+    /* -----------> Agregar codigo desktop aca <----------- */
+    /* Se aplicará cuando el dispositivo tenga un minimo de 950px */
+
+}

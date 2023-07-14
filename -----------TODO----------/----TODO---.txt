@@ -1,0 +1,30 @@
+========================= AUTH MODULE =========================
+
+ - Agregar componente login y register conectado a firebase con
+  base de datos en firestore
+
+- Usar 'useContext()' para comunicarse con los demás modulos
+
+- Generar carpeta 'context' con el context y provider para comunicar a los
+  componentes más el reducer para manejar el estado del login
+
+  {
+    logged: true/false,
+    user: {
+        id: '123',
+        name: 'Maximiliano',
+    }
+  }
+
+  ========================= TABS MODULE =========================
+  - Generar ruteo entre 'tab list' y 'tab historial'
+  - En 'tab list'
+    * Agregar input form
+    * Agregar Item List y Item
+    * Agregar Total Counter
+    * Agregar boton 'Finalizar Lista'
+
+- En 'tab historial'
+    * Agregar Historial List y Historial Item
+    * Agregar boton 'Ver' en Historial Item para abri MODAL
+    * Agregar Modal
