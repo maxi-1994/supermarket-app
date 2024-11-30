@@ -9,20 +9,9 @@ const initialState = [
         id: '1',
         done: false,
         description: 'Aceite de oliva',
-        price: 0
+        price: 100,
+        quantity: 1,
     },
-    {
-        id: '2',
-        done: true,
-        description: 'Coca Cola',
-        price: 0
-    },
-    {
-        id: '3',
-        done: false,
-        description: 'Leche Descremada',
-        price: 0
-    }
 ];
 
 export const ListProvider = ({ children }) => {
@@ -38,10 +27,6 @@ export const ListProvider = ({ children }) => {
         dispatchItem(action);
     }
 
-    const addPriceItem = (item) => {
-        console.log(item);
-    }
-
     const changeDoneStatus = (itemId) => {        
         const action = {
             type: '[itemlistReducer] Item Status',
@@ -55,7 +40,6 @@ export const ListProvider = ({ children }) => {
         <ListContext.Provider value={{
             itemsState,
             addNewItem: addNewItem,
-            addPriceItem: addPriceItem,
             changeDoneStatus: changeDoneStatus,
         }}>
             { children }

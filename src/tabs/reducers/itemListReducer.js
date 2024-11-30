@@ -11,16 +11,6 @@ export const itemReducer = (state = [], action) => {
         case '[itemlistReducer] Remove Item':
             return state.filter(item => item.id !== action.payload);
 
-        case '[itemlistReducer] Add Price Item':
-            return state.map(item => {
-                if (item.id === action.payload.id) {
-                    return {
-                        ...item,
-                        price: action.payload.price,
-                    }
-                }
-            })
-
         case '[itemlistReducer] Item Status':
             return state.map(item => {
                 if (item.id === action.payload) {

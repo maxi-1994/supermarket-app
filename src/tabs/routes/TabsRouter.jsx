@@ -14,10 +14,10 @@ export const TabsRouter = () => {
 
             <div className="container">
                 <Routes>
-                    <Route path="superMarketList" element={ <SuperMarketList /> } />
+                    <Route path="items-list" element={ <SuperMarketList /> } />
                     <Route path="historial" element={ <Historial /> } />
 
-                    <Route path="/" element={ <Navigate to='superMarketList' /> } />
+                    <Route path="/" element={ <Navigate to='items-list' /> } />
                 </Routes>
             </div>
         </ListProvider>

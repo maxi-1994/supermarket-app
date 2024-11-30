@@ -9,7 +9,7 @@ export const Navbar = () => {
                     <li>
                         <NavLink 
                             className={ ({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}` }
-                            to='/superMarketList'
+                            to='/items-list'
                         >
                             List
                         </NavLink>
